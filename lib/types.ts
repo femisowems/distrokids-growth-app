@@ -1,15 +1,21 @@
-export type Channel = 'tiktok' | 'instagram' | 'youtube' | 'spotify' | 'email' | 'organic';
+export type Channel =
+  | "tiktok"
+  | "instagram"
+  | "youtube"
+  | "spotify"
+  | "email"
+  | "organic";
 
 export type LandingSectionType =
-  | 'hero'
-  | 'social-proof'
-  | 'countdown'
-  | 'embed'
-  | 'cta'
-  | 'faq'
-  | 'stats'
-  | 'artist-story'
-  | 'video';
+  | "hero"
+  | "social-proof"
+  | "countdown"
+  | "embed"
+  | "cta"
+  | "faq"
+  | "stats"
+  | "artist-story"
+  | "video";
 
 export type LandingSection = {
   id: string;
@@ -40,7 +46,7 @@ export type Release = {
   title: string;
   releaseDate: string;
   preSaves: number;
-  status: 'draft' | 'scheduled' | 'live';
+  status: "draft" | "scheduled" | "live";
 };
 
 export type Campaign = {
@@ -64,7 +70,7 @@ export type ExperimentVariant = {
 export type Experiment = {
   id: string;
   name: string;
-  status: 'running' | 'complete' | 'draft';
+  status: "running" | "complete" | "draft";
   objective: string;
   variants: ExperimentVariant[];
   winningVariantId?: string;
@@ -82,7 +88,7 @@ export type AnalyticsEvent = {
 
 export type AIGeneration = {
   id: string;
-  type: 'caption' | 'seo' | 'email' | 'hook' | 'strategy';
+  type: "caption" | "seo" | "email" | "hook" | "strategy";
   tone: string;
   prompt: string;
   output: string;

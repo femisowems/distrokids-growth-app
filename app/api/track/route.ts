@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   const body = await request.json().catch(() => ({}));
@@ -7,6 +7,8 @@ export async function POST(request: Request) {
     ok: true,
     received: body,
     stored: false,
-    reason: process.env.SUPABASE_SERVICE_ROLE_KEY ? 'ready-for-persistence' : 'mock-mode'
+    reason: process.env.SUPABASE_SERVICE_ROLE_KEY
+      ? "ready-for-persistence"
+      : "mock-mode",
   });
 }

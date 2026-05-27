@@ -1,5 +1,5 @@
-import { NextResponse } from 'next/server';
-import { generateMarketingAsset } from '@/lib/ai';
+import { NextResponse } from "next/server";
+import { generateMarketingAsset } from "@/lib/ai";
 
 export async function POST(request: Request) {
   const payload = await request.json();
@@ -7,6 +7,6 @@ export async function POST(request: Request) {
 
   return NextResponse.json({
     ok: true,
-    result
+    result,
   });
 }

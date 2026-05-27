@@ -56,5 +56,6 @@ build/
 .parcel-cache/
 .eslintcache
 .stylelintcache
+*.tsbuildinfo
 tsbuildinfo
 .yarn-integrity

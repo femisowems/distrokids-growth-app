@@ -12,7 +12,10 @@ export type Brief = {
 const briefs: Brief[] = [];
 
 function generateId() {
-  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+  if (
+    typeof crypto !== "undefined" &&
+    typeof crypto.randomUUID === "function"
+  ) {
     return crypto.randomUUID();
   }
   // Fallback
@@ -29,7 +32,7 @@ export function addBrief(payload: Partial<Brief>) {
     goal: payload.goal,
     summary: payload.summary,
     createdAt: now,
-    publishedAt: payload.publishedAt ?? null
+    publishedAt: payload.publishedAt ?? null,
   };
   briefs.unshift(brief);
   return brief;

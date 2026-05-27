@@ -15,8 +15,16 @@
 html {
   scroll-behavior: smooth;
   background:
-    radial-gradient(circle at top left, rgba(125, 249, 255, 0.14), transparent 28%),
-    radial-gradient(circle at 80% 10%, rgba(255, 122, 89, 0.14), transparent 24%),
+    radial-gradient(
+      circle at top left,
+      rgba(125, 249, 255, 0.14),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 80% 10%,
+      rgba(255, 122, 89, 0.14),
+      transparent 24%
+    ),
     linear-gradient(180deg, #06101d 0%, #07111f 44%, #04070d 100%);
 }
 
@@ -25,15 +33,21 @@ body {
   min-height: 100vh;
   background: transparent;
   color: rgb(var(--foreground));
-  font-feature-settings: 'ss01' 1, 'ss02' 1, 'cv01' 1, 'cv02' 1;
+  font-feature-settings:
+    "ss01" 1,
+    "ss02" 1,
+    "cv01" 1,
+    "cv02" 1;
 }
 
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-size: 72px 72px;
   mask-image: radial-gradient(circle at center, black 30%, transparent 100%);
   opacity: 0.28;
@@ -61,7 +75,9 @@ a {
   }
 
   .editorial-grid {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
     background-size: 32px 32px;
   }
 }
